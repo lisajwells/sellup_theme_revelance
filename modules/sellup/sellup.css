@@ -1,0 +1,102 @@
+#logo {
+	width: 20%;
+}
+#home-carusel .dnd_column_dd_span6:first-child ul {
+	padding: 0;
+	margin: 0;
+}
+#home-carusel .dnd_column_dd_span6:first-child ul li {
+	list-style: none;
+}
+#home-carusel .dnd_column_dd_span6 img {
+	width: 100%;
+}
+#home_post_section .dnd_posts_shortcode {
+	width: 31.62393162393162%;
+	display: block;
+float: left;
+min-height: 20px;
+margin-left: 2.564102564102564%;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+#home_post_section .dnd_posts_shortcode:first-child {
+	margin-left: 0;
+}
+#home_post_section .dnd_posts_shortcode img {
+	width: 100%;
+	margin-bottom: 10px;
+}
+#home_post_section .dnd_posts_shortcode h5 {
+	font-weight: bold;
+}
+.full-width-devider  {
+	padding: 20px 0;
+}
+#company-info h4 {
+	margin-top: 20px;
+	padding-top: 15px;
+	border-top: 1px solid #ccc;
+}
+.home-our-clients- {
+	background: #eee;
+	padding: 10px;
+}
+#home_last_row h4 {
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ccc;
+}
+#home_last_row img {
+	margin-bottom: 15px;
+}
+#home_last_row .dnd-button, #company-info .dnd-button {
+	margin-top: 10px;
+}
+#home_last_row label {
+	display: block;
+	padding-bottom: 5px;
+}
+ #home_last_row .wpcf7-form  br{
+	display: none;
+}
+#home-carusel .dnd_column_dd_span6:first-child {
+	position: relative;
+}
+#home-carusel .dnd_column_dd_span6:first-child .dnd-animo {
+	position: absolute;
+	left: 0;
+	height:389px;
+	overflow:hidden;
+}
+#subscribe-form {
+	text-align: center;
+}
+#subscribe-form-msg {
+	text-align: center;
+}
+.page-template-page-signupfree .smcx-embed {
+
+}
+.page-template-page-signupfree .smcx-embed,.page-template-page-signupfree .smcx-embed>.smcx-iframe-container{
+	width: 100%!important;
+	min-height: 1100px;
+}
+.page-template-page-signupfree .smcx-embed>.smcx-iframe-container {
+	min-height: 1065px;
+}
+#signuo-for-free {
+	margin-bottom: 10px;
+	text-align: center;
+	padding: 80px 0;
+}
+#signuo-for-free a {
+	text-decoration: underline;
+}
+#signuo-for-free a:hover {
+	text-decoration: none;
+}
+/*#home-carusel .dnd_column_dd_span6:first-child .dnd-animo.on {
+	position: relative;
+}*/

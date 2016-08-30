@@ -4,7 +4,7 @@ Version: 1.0
 Author: HyQuality Media
 Author URI: http://www.hyquality.com
 Description: Wordpress theme for SellUp site
-Theme URI: http://sellup.net  
+Theme URI: http://sellup.net
 
 
 /*-----------------------------------------------------------------*/
@@ -37,7 +37,7 @@ Theme URI: http://sellup.net
 		display: block;
 	}
 
-	html { 
+	html {
 		min-height: 100%;
 		margin: 0;
 		padding: 0;
@@ -58,7 +58,7 @@ Theme URI: http://sellup.net
 	input[type="text"],input[type="password"],input[type="email"], textarea {
 		-webkit-appearance: none;
 		width: 100%;
-		font-family: inherit; 
+		font-family: inherit;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
@@ -127,9 +127,9 @@ Theme URI: http://sellup.net
 		background-color: #d9d9d9;
 		display: block;
 		height: 1px;
-		border-color: #d9d9d9; 
+		border-color: #d9d9d9;
 		border: 0;
-		padding: 0; 
+		padding: 0;
 	}
 
 	section{
@@ -212,7 +212,7 @@ Theme URI: http://sellup.net
 		display: block;
 		font-weight: 700;
 	}
-	
+
 	dt {
 		font-weight: 700;
 	}
@@ -449,7 +449,7 @@ Theme URI: http://sellup.net
 		position: absolute;
 		top: 0;
 		left: 0;
-		z-index: 1;	
+		z-index: 1;
 	}
 
 	.pattern_overlayed:before{
@@ -513,8 +513,8 @@ Theme URI: http://sellup.net
 		width: 100%;
 		min-height: 20px;
 		margin-left: 2.564102564102564%;
-		-webkit-box-sizing: border-box; 
-		-moz-box-sizing: border-box; 
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 	}
 
@@ -600,7 +600,8 @@ Theme URI: http://sellup.net
 		padding: 22px 0px;
 		box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
 		z-index: 9999;
-		position: absolute;
+    /*position: absolute;*/
+		position: fixed;
 		top: 0;
 		left: 0;
 	}
@@ -948,12 +949,12 @@ Theme URI: http://sellup.net
 	.tp-dottedoverlay{
 		z-index: 2;
 	}
-	
+
 	.tp-dottedoverlay.twoxtwo{
 		background: url(images/pattern_overlay.png);
 	}
 
-	.tp-bullets.simplebullets.round .bullet{	
+	.tp-bullets.simplebullets.round .bullet{
 		background:#999;
 		width: 15px;
 		height: 15px;
@@ -964,7 +965,7 @@ Theme URI: http://sellup.net
 	}
 
 	.tp-bullets.simplebullets.round .bullet:hover,
-	.tp-bullets.simplebullets.round .bullet.selected{	
+	.tp-bullets.simplebullets.round .bullet.selected{
 		background-color:#e42382;
 	}
 
@@ -1024,9 +1025,9 @@ Theme URI: http://sellup.net
 		margin-bottom: 10px;
 	}
 
-	.dnd-accordion .ui-accordion-header { 
-		display: block; 
-		cursor: pointer; 
+	.dnd-accordion .ui-accordion-header {
+		display: block;
+		cursor: pointer;
 		position: relative;
 		border: 1px solid #e1e1e1;
 		background: #f3f3f3;
@@ -1034,10 +1035,10 @@ Theme URI: http://sellup.net
 		font-weight:700;
 		font-size: 16px;
 		text-transform: uppercase;
-		-webkit-transition: border-width 0.8s ease-in-out; 
-		-moz-transition: border-width 0.8s ease-in-out; 
-		-o-transition: border-width 0.8s ease-in-out; 
-		-ms-transition: border-width 0.8s ease-in-out; 
+		-webkit-transition: border-width 0.8s ease-in-out;
+		-moz-transition: border-width 0.8s ease-in-out;
+		-o-transition: border-width 0.8s ease-in-out;
+		-ms-transition: border-width 0.8s ease-in-out;
 		transition: border-width 0.8s ease-in-out;
 		margin-top: 10px !important;
 		padding: 13px 16px;
@@ -1181,7 +1182,7 @@ Theme URI: http://sellup.net
 		padding: 20px 15px;
 	}
 
-	
+
 	.dnd-tabs-style2 .ui-tabs-nav li{
 		border-top: 1px solid #e42382;
 		border-left: 1px solid #e42382;
@@ -1267,31 +1268,31 @@ Theme URI: http://sellup.net
 
 /*-------- 05.j. Image Overlay --------*/
 	.ABdev_overlayed{
-		position: relative; 
+		position: relative;
 		line-height: 1;
 	}
 
 	.ABdev_overlayed .ABdev_overlay {
-		width: 100%; 
-		height: 100%; 
-		position: absolute; 
-		overflow: hidden; 
-		top: 0; 
-		left: 0; 
-		filter: alpha(opacity=0); 
-		opacity: 0; 
-		background:#e42382; 
-		-webkit-transition: all 300ms ease-in-out; 
-		-moz-transition: all 300ms ease-in-out; 
-		-o-transition: all 300ms ease-in-out; 
-		-ms-transition: all 300ms ease-in-out; 
-		transition: all 300ms ease-in-out; 
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		overflow: hidden;
+		top: 0;
+		left: 0;
+		filter: alpha(opacity=0);
+		opacity: 0;
+		background:#e42382;
+		-webkit-transition: all 300ms ease-in-out;
+		-moz-transition: all 300ms ease-in-out;
+		-o-transition: all 300ms ease-in-out;
+		-ms-transition: all 300ms ease-in-out;
+		transition: all 300ms ease-in-out;
 	}
 
 	.ABdev_overlayed:hover .ABdev_overlay {
-		filter: alpha(opacity=100); 
-		opacity: 1; 
-		background:rgba(9,61,113,0.75); 
+		filter: alpha(opacity=100);
+		opacity: 1;
+		background:rgba(9,61,113,0.75);
 	}
 
 	.ABdev_overlayed .ABdev_overlay p{
@@ -1940,7 +1941,7 @@ Theme URI: http://sellup.net
 		color: #fff;
 		border-color: #e42382;
 	}
-	
+
 	#blog_pagination .page-numbers.current{
 		background: #e42382;
 		color: #fff;
@@ -2111,7 +2112,7 @@ Theme URI: http://sellup.net
 	aside .widget{
 		margin-bottom: 42px;
 	}
-	
+
 	aside .widget h3{
 		font-size: 18px;
 		font-weight: 300;
@@ -2160,7 +2161,7 @@ Theme URI: http://sellup.net
 		font-family:'entypo'
 	}
 
-/*-------- 08.a. Search --------*/	
+/*-------- 08.a. Search --------*/
 	.widget_search form{
 		position: relative;
 	}
@@ -2202,7 +2203,7 @@ Theme URI: http://sellup.net
 		margin-bottom: 12px;
 	}
 
-/*-------- 08.b. Tag Cloud --------*/	
+/*-------- 08.b. Tag Cloud --------*/
 	.tagcloud a{
 		border: 1px solid #676767;
 		display: inline-block;
@@ -2236,7 +2237,7 @@ Theme URI: http://sellup.net
 		border-color: #929292;
 	}
 
-/*-------- 08.c. Flickr stream --------*/	
+/*-------- 08.c. Flickr stream --------*/
 	.flickr-stream a{
 		float: left;
 		margin: 0 10px 10px 0;
@@ -2259,7 +2260,7 @@ Theme URI: http://sellup.net
 		height: 80px;
 	}
 
-/*-------- 08.c. tweet widget --------*/	
+/*-------- 08.c. tweet widget --------*/
 	.ab-tweet-scroller{
 		margin-bottom: 40px;
 	}
@@ -2284,7 +2285,7 @@ Theme URI: http://sellup.net
 	.ab-tweet-text{
 		font-size: 18px;
 		font-weight: 400;
-		line-height: 26px; 
+		line-height: 26px;
 	}
 
 	.ab-tweet-item{
@@ -2314,7 +2315,7 @@ Theme URI: http://sellup.net
 		color: #fff;
 	}
 
-/*-------- 08.d. Custom Menu Widget --------*/	
+/*-------- 08.d. Custom Menu Widget --------*/
 	.widget_nav_menu ul{
 		margin-left: 0;
 	}
@@ -2348,7 +2349,7 @@ Theme URI: http://sellup.net
 
 	.portfolio_item,
 	.portfolio_item .overlayed{
-		position: relative; 
+		position: relative;
 		text-align: center;
 	}
 
@@ -2372,26 +2373,26 @@ Theme URI: http://sellup.net
 	}
 
 	.portfolio_item .overlayed .overlay {
-		width: 100%; 
-		height: 100%; 
-		position: absolute; 
-		overflow: hidden; 
-		top: 0; 
-		left: 0; 
-		filter: alpha(opacity=0); 
-		opacity: 0; 
-		background: none; 
-		-webkit-transition: all 300ms ease-in-out; 
-		-moz-transition: all 300ms ease-in-out; 
-		-o-transition: all 300ms ease-in-out; 
-		-ms-transition: all 300ms ease-in-out; 
-		transition: all 300ms ease-in-out; 
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		overflow: hidden;
+		top: 0;
+		left: 0;
+		filter: alpha(opacity=0);
+		opacity: 0;
+		background: none;
+		-webkit-transition: all 300ms ease-in-out;
+		-moz-transition: all 300ms ease-in-out;
+		-o-transition: all 300ms ease-in-out;
+		-ms-transition: all 300ms ease-in-out;
+		transition: all 300ms ease-in-out;
 	}
 
 	.portfolio_item:hover .overlayed .overlay {
-		filter: alpha(opacity=100); 
-		opacity: 1; 
-		background:rgba(0,0,0,0.5); 
+		filter: alpha(opacity=100);
+		opacity: 1;
+		background:rgba(0,0,0,0.5);
 	}
 
 	.portfolio_item_tags{
@@ -2575,7 +2576,7 @@ Theme URI: http://sellup.net
 	}
 
 	#related_portfolio{
-		padding-top: 40px;		
+		padding-top: 40px;
 		padding-bottom: 0;
 	}
 
@@ -2625,12 +2626,12 @@ Theme URI: http://sellup.net
 		line-height: 36px;
 	}
 
-	#abdev_back_to_top:hover{    
+	#abdev_back_to_top:hover{
 	    background-color: #e42382;
 	    border-color: #e42382;
 	}
 
-	#abdev_back_to_top:hover i{    
+	#abdev_back_to_top:hover i{
 	    color: #fff;
 	}
 

@@ -1,4 +1,4 @@
-<?php 
+<?php
 	global $revelance_options;
 ?>
 <header id="abdev_main_header" class="clearfix">
@@ -6,7 +6,6 @@
 		<div id="logo">
 			<a href="<?php echo home_url(); ?>">
 				<img id="main_logo" src="<?php echo (isset($revelance_options['header_logo']['url']) && $revelance_options['header_logo']['url'] != '') ? $revelance_options['header_logo']['url'] : TEMPPATH.'/images/logo.png';?>" alt="<?php bloginfo('name');?>">
-				<img id="inversed_logo" src="<?php echo (isset($revelance_options['inversed_header_logo']['url']) && $revelance_options['inversed_header_logo']['url'] != '') ? $revelance_options['inversed_header_logo']['url'] : TEMPPATH.'/images/logo_inversed.png';?>" alt="<?php bloginfo('name');?>">
 			</a>
 		</div>
 		<nav>

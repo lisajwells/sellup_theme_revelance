@@ -118,7 +118,7 @@
 
 	#logo{
 		display: inline-block;
-		float: none;
+		/*float: none;*/
 	}
 
 	#ABdev_menu_toggle{

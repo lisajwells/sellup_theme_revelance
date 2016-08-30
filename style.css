@@ -239,6 +239,10 @@ Theme URI: http://sellup.net
     margin-top: 30px;
 	}
 
+  #contact header h3 {
+    margin-top: 30px;
+  }
+
 	.main_title span{
 		display: inline-block;
 		text-transform: uppercase;

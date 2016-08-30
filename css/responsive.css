@@ -155,6 +155,7 @@
 	#abdev_main_header nav > ul{
 		clear: both;
 		padding-left: 30px;
+    padding-right: 12px;
 	}
 
 	#abdev_main_header nav > ul > li{

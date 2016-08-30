@@ -242,7 +242,7 @@ Theme URI: http://sellup.net
     margin-top: 30px;
 	}
 
-  #contact header h3 {
+  #contact header h3, #services h3 {
     margin-top: 30px;
   }
 

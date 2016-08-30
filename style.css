@@ -705,7 +705,7 @@ Theme URI: http://sellup.net
 
 	nav > ul{
 		list-style: none;
-		margin: 14px 0 0 0;
+		margin: 24px 0 0 0;
 		float: right;
 		position: relative;
 	}
@@ -815,7 +815,7 @@ Theme URI: http://sellup.net
 		text-align: center;
 		line-height: 26px;
 		margin-left: 5px;
-		margin-top: 10px;
+		margin-top: 20px;
 	}
 
 	nav .menu_social:last-of-type{

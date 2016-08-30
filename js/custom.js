@@ -60,6 +60,51 @@ jQuery(document).ready(function($) {
 
     var admin_toolbar_height = parseInt($('html').css('marginTop'), 10);
 
+    function header_switch(){
+            if($(document).scrollTop() < $main_slider.height() && $(window).width()>979){
+                if($(document).scrollTop() < $main_header.height()){
+                    $main_header.addClass('menu_over_slider').fadeIn();
+                    $main_logo.hide();
+                    $inversed_logo.show();
+                }
+                else{
+                    $main_header.fadeOut();
+                }
+            }
+            else{
+                $main_header.removeClass('menu_over_slider').slideDown();
+                $main_logo.show();
+                $inversed_logo.hide();
+            }
+    }
+
+    function sticky_header(){
+        if($(window).width()>979){
+            $main_header.css({
+                'z-index' : '9999',
+                'visibility' : 'visible',
+                'position' : 'fixed',
+                'top': 0+admin_toolbar_height,
+            });
+
+            if($main_slider.length>0){
+                $main_header.addClass('menu_over_slider');
+                $(document).scroll(function(){
+                    header_switch();
+                });
+            }
+            else{
+                $main_header.css('top', 0+admin_toolbar_height);
+            }
+        }
+        else{
+            $main_header.removeClass('menu_over_slider').css({
+                'visibility' : 'visible',
+                'position':'static',
+                'top': 0,
+            });
+        }
+    }
 
     // sticky_header();
     // header_switch();
@@ -194,8 +239,8 @@ jQuery(document).ready(function($) {
             $menu_responsive.hide();
         }
 
-        sticky_header();
-        header_switch();
+        // sticky_header();
+        // header_switch();
     });
 
 

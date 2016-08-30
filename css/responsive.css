@@ -187,6 +187,10 @@
 		background: none;
 	}
 
+  #abdev_main_slider {
+        padding: 70px 0 0 0;
+  }
+
 	aside.sidebar_right,
 	aside.sidebar_left{
 		padding: 0px;

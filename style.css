@@ -696,6 +696,10 @@ Theme URI: http://sellup.net
 		float: left;
 	}
 
+  img#main_logo {
+    min-width: 160px;
+  }
+
 
 /*-------- 03.a. Main menu --------*/
 	#ABdev_menu_toggle{

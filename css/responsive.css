@@ -40,13 +40,14 @@
 	nav .menu_social{
 		float: none;
 		display: inline-block;
-		margin: 20px 3px !important;
-	}
+		margin: 6px 3px !important;
+  }
 
-	nav > ul{
-		float: none;
-		width: 100%;
+  nav > ul{
+    float: none;
+    margin: 16px 0 0 0;
 		text-align: center;
+    width: 100%;
 	}
 
 	nav > ul > li{

@@ -73,9 +73,10 @@
 		margin-right: 10px;
 	}
 
-	section.page_main_section:first-of-type {
-		margin-top: 0px;
-	}
+  section.page_main_section:first-of-type {
+    margin-top: 90px;
+  }
+
 
 	.revelance-small-with-lines:before,
 	.revelance-small-with-lines:after{

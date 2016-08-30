@@ -110,7 +110,6 @@ jQuery(document).ready(function($) {
     // header_switch();
 
 
-
     $('.accordion-group').on('show', function() {
         $(this).find('i').removeClass('icon-plus').addClass('icon-minus');
     });

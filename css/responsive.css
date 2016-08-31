@@ -236,5 +236,9 @@
     width: 250px;
   }
 
+  .dnd_section_dd {
+    padding: 30px 0;
+  }
+
 }
 

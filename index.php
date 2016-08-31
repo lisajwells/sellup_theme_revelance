@@ -1,13 +1,13 @@
-<?php 
+<?php
 
 get_header();
 
-get_template_part('partials/header_menu'); 
+get_template_part('partials/header_menu');
 
 global $revelance_options;
 
 $cat_id = get_query_var('cat');
-$cat_data = get_option("category_$cat_id"); 
+$cat_data = get_option("category_$cat_id");
 $read_more= __('Read More','ABdev_revelance');
 
 global $ABdev_revelance_title_bar_title;
@@ -23,39 +23,39 @@ elseif(is_author()){
 	$ABdev_revelance_title_bar_title = __('Posts by','ABdev_revelance') . ' ' . $curauth -> display_name;
 }
 elseif(is_tag()){
-	$ABdev_revelance_title_bar_title = __('Posts Taged','ABdev_revelance').' '.get_query_var('tag');
+	$ABdev_revelance_title_bar_title = __('Posts Tagged','ABdev_revelance').' '.get_query_var('tag');
 }
 elseif(is_month()){
 	$month = '01-'.substr(get_query_var('m'), 4, 2).'-'.substr(get_query_var('m'), 0, 4);
 	$ABdev_revelance_title_bar_title = __('Posts on ','ABdev_revelance').' '.date('M Y',strtotime($month));
 }
 
-get_template_part('partials/teaser_bar'); 
+get_template_part('partials/teaser_bar');
 
 ?>
-	
+
 	<section class="page_main_section">
 		<div class="container">
 
 			<h1 class="main_title"><span><?php echo $ABdev_revelance_title_bar_title;?></span></h1>
 
 
-			<?php if(isset($cat_data['sidebar_position']) && ($cat_data['sidebar_position'] == 'masonry' || $cat_data['sidebar_position'] == 'masonry3')): 
+			<?php if(isset($cat_data['sidebar_position']) && ($cat_data['sidebar_position'] == 'masonry' || $cat_data['sidebar_position'] == 'masonry3')):
 				$i = 0;
 			?>
-				<?php 
+				<?php
 
 				$column = array();
 				$column[1]=$column[2]=$column[3]=$column[4]='';
 
 				if (have_posts()) :  while (have_posts()) : the_post();
-				 
+
 					$i++;
 
 					$column[$i] .= '<div class="blog_category_index_'.$cat_data['sidebar_position'].' '. implode(' ', get_post_class('grid_post, post_content')) .'">';
-					
+
 					$custom = get_post_custom();
-					
+
 						if(isset($custom['ABdevFW_selected_media'][0]) && $custom['ABdevFW_selected_media'][0]=='soundcloud' && isset($custom['ABdevFW_soundcloud'][0]) && $custom['ABdevFW_soundcloud'][0]!=''){
 							$column[$i].= '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F'.$custom['ABdevFW_soundcloud'][0].'"></iframe>';
 						}
@@ -68,7 +68,7 @@ get_template_part('partials/teaser_bar');
 						else{
 							$column[$i].=get_the_post_thumbnail();
 						}
-			
+
 						$column[$i] .= '<div class="post_main_inner_wrapper">
 									<h2><a href="'.get_permalink().'">'.get_the_title().'</a></h2>
 									<div class="grid_content">
@@ -142,19 +142,19 @@ get_template_part('partials/teaser_bar');
 									<?php the_content($read_more);?>
 								</div>
 							</div>
-							
-						
-					<?php endwhile; 
+
+
+					<?php endwhile;
 					else: ?>
 						<p><?php _e('No posts were found. Sorry!', 'ABdev_revelance');?></p>
 					<?php endif;?>
-					
-					
+
+
 				</div><!-- end span8 main-content -->
-				
+
 				<?php if (!isset($cat_data['sidebar_position']) || (isset($cat_data['sidebar_position']) && $cat_data['sidebar_position'] != 'none')):?>
 					<aside class="span4 sidebar <?php echo (isset($cat_data['sidebar_position']) && $cat_data['sidebar_position']=='left')?'sidebar_left':'sidebar_right';?>">
-						<?php 
+						<?php
 						if(isset($cat_data['sidebar']) && $cat_data['sidebar']!=''){
 							$selected_sidebar=$cat_data['sidebar'];
 						}
@@ -168,7 +168,7 @@ get_template_part('partials/teaser_bar');
 
 			</div><!-- end row -->
 
-			
+
 		<?php get_template_part( 'partials/pagination' ); ?>
 
 	<?php endif; ?>
@@ -177,7 +177,7 @@ get_template_part('partials/teaser_bar');
 	</section>
 
 
-	<?php 
+	<?php
 	if(isset($revelance_options['content_after_category']) && $revelance_options['content_after_category']!=''){
 		echo do_shortcode($revelance_options['content_after_category']);
 	}

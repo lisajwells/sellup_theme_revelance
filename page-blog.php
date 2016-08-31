@@ -2,16 +2,16 @@
 /*
 Template Name: Blog Page
 */
- 
+
 
 get_header();
 
-get_template_part('partials/header_menu'); 
+get_template_part('partials/header_menu');
 
 global $revelance_options;
 
 $cat_id = get_query_var('cat');
-$cat_data = get_option("category_$cat_id"); 
+$cat_data = get_option("category_$cat_id");
 $read_more= __('Read More','ABdev_revelance');
 
 global $ABdev_revelance_title_bar_title;
@@ -27,19 +27,19 @@ elseif(is_author()){
 	$ABdev_revelance_title_bar_title = __('Posts by','ABdev_revelance') . ' ' . $curauth -> display_name;
 }
 elseif(is_tag()){
-	$ABdev_revelance_title_bar_title = __('Posts Taged','ABdev_revelance').' '.get_query_var('tag');
+	$ABdev_revelance_title_bar_title = __('Posts Tagged','ABdev_revelance').' '.get_query_var('tag');
 }
 elseif(is_month()){
 	$month = '01-'.substr(get_query_var('m'), 4, 2).'-'.substr(get_query_var('m'), 0, 4);
 	$ABdev_revelance_title_bar_title = __('Posts on ','ABdev_revelance').' '.date('M Y',strtotime($month));
 }
 
-get_template_part('partials/teaser_bar'); 
+get_template_part('partials/teaser_bar');
 
 
 
 ?>
-	
+
 	<section class="page_main_section">
 		<div class="container">
 
@@ -58,7 +58,7 @@ get_template_part('partials/teaser_bar');
 				'paged' => get_query_var( 'paged' )  ,
 			);
 			query_posts($args);
-					
+
 					 if (have_posts()) :  while (have_posts()) : the_post();?>
 						<?php $custom = get_post_custom();?>
 							<div <?php post_class('post_wrapper clearfix');?>>
@@ -89,19 +89,19 @@ get_template_part('partials/teaser_bar');
 									<?php the_content($read_more);?>
 								</div>
 							</div>
-							
-						
-					<?php endwhile; 
+
+
+					<?php endwhile;
 					else: ?>
 						<p><?php _e('No posts were found. Sorry!', 'ABdev_revelance');?></p>
 					<?php endif;?>
-					
-					
+
+
 				</div><!-- end span8 main-content -->
-				
+
 				<?php if (!isset($cat_data['sidebar_position']) || (isset($cat_data['sidebar_position']) && $cat_data['sidebar_position'] != 'none')):?>
 					<aside class="span4 sidebar <?php echo (isset($cat_data['sidebar_position']) && $cat_data['sidebar_position']=='left')?'sidebar_left':'sidebar_right';?>">
-						<?php 
+						<?php
 						if(isset($cat_data['sidebar']) && $cat_data['sidebar']!=''){
 							$selected_sidebar=$cat_data['sidebar'];
 						}
@@ -115,7 +115,7 @@ get_template_part('partials/teaser_bar');
 
 			</div><!-- end row -->
 
-			
+
 		<?php get_template_part( 'partials/pagination' ); ?>
 
 
@@ -124,7 +124,7 @@ get_template_part('partials/teaser_bar');
 	</section>
 
 
-	<?php 
+	<?php
 	if(isset($revelance_options['content_after_category']) && $revelance_options['content_after_category']!=''){
 		echo do_shortcode($revelance_options['content_after_category']);
 	}

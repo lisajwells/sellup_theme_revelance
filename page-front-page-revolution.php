@@ -16,11 +16,10 @@ $values = get_post_custom( $post->ID );
 
 			/* Display and echo mobile specific stuff here */
 			/* Our Parallax Slider is 1060x600 */
-			?>
 
-			<div id="mobile-hero"><img src="http://sellup.net/wp-content/uploads/2016/08/SellUp-Email-Marketing-Message-Match_mobl.jpg"></div>
+			// echo '<div id="mobile-hero"><img src="'. get_home_url() . '/wp-content/uploads/.........."></div>';
+			echo '<div id="mobile-hero"><img src="'. get_post_meta($post->ID, 'mobile_hero_url', true) .'"></div>';
 
-		<?php
 		}	else {
 
 				if( isset( $values['revslider_alias'][0]) && $values['revslider_alias'][0] != '' ){

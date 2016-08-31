@@ -1058,6 +1058,19 @@ Theme URI: http://sellup.net
     margin-bottom: 0px;
 }
 
+.dnd_team_member .dnd_team_member_position {
+    margin-bottom: 0px;
+}
+
+.dnd_team_member > p:first-of-type {
+    margin-top: -10px;
+}
+
+.dnd-button {
+    margin-right: 0;
+    white-space: normal;
+}
+
 
 /*-----------------------------------------------------------------*/
 /* 05. Elements

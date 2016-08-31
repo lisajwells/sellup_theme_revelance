@@ -170,7 +170,7 @@ Theme URI: http://sellup.net
 	h1{
 		font-size: 30px;
 		line-height: 30px;
-        margin-top: 30px;
+        /*margin-top: 30px;*/
 
   }
 
@@ -242,7 +242,8 @@ Theme URI: http://sellup.net
     margin-top: 30px;
 	}
 
-  #contact header h3 {
+  #contact header h3,
+  #services h3:first-of-type {
     margin-top: 30px;
   }
 
@@ -1052,6 +1053,10 @@ Theme URI: http://sellup.net
 
 .dnd_section_dd {
   padding: 30px 0;
+}
+
+.dnd_column_dd_span6 {
+    margin-top: 40px;
 }
 
 

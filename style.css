@@ -771,6 +771,8 @@ Theme URI: http://sellup.net
 		min-width: 228px;
 		margin-top: 33px;
 		z-index: 2001;
+    left: 1.2em;
+    top: 16px;
 	}
 
 	nav > ul > li > ul:before{

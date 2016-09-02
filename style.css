@@ -2136,6 +2136,11 @@ Theme URI: http://sellup.net
     background: #505050 !important;
 }
 
+.gform_wrapper label.gfield_label {
+    font-weight: 600 !important;
+    font-size: inherit;
+}
+
 /*-----------------------------------------------------------------*/
 /* 07. Contact Form 7
 /*-----------------------------------------------------------------*/

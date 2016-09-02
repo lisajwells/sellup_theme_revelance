@@ -30,8 +30,9 @@ elseif(is_tag()){
 	$ABdev_revelance_title_bar_title = __('Posts Tagged','ABdev_revelance').' '.get_query_var('tag');
 }
 elseif(is_month()){
-	$month = '01-'.substr(get_query_var('m'), 4, 2).'-'.substr(get_query_var('m'), 0, 4);
-	$ABdev_revelance_title_bar_title = __('Posts on ','ABdev_revelance').' '.date('M Y',strtotime($month));
+	$ABdev_revelance_title_bar_title = __('Posts from','ABdev_revelance').' '.single_month_title(' ', false); echo $my_month;
+	// $month = '01-'.substr(get_query_var('m'), 4, 2).'-'.substr(get_query_var('m'), 0, 4);
+	// $ABdev_revelance_title_bar_title = __('Posts on ','ABdev_revelance').' '.date('M Y',strtotime($month));
 }
 
 get_template_part('partials/teaser_bar');

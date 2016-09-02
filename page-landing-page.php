@@ -1,11 +1,11 @@
 <?php
 /*
-Template Name: Full width
+Template Name: Landing Page
 */
 
 get_header();
 
-get_template_part('partials/header_menu');
+get_template_part('partials/header_nomenu');
 
 ?>
 	<section class="page_main_section">

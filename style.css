@@ -1041,6 +1041,11 @@ Theme URI: http://sellup.net
     height: auto;
   }
 
+  #mobile-hero img {
+    width: 100%;
+    height: auto;
+  }
+
   /*slider captions need min size this doesn't work*/
 /*  section #rev_slider_2_1 .tp-caption center {
     min-width: 200px !important;

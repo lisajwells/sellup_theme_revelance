@@ -5,7 +5,7 @@ Template Name: Full width
 
 get_header();
 
-get_template_part('partials/header_menu');
+get_template_part('partials/header_menu'); 
 
 ?>
 	<section class="page_main_section">

@@ -707,6 +707,25 @@ Theme URI: http://sellup.net
 		text-transform: uppercase;
 	}
 
+  /*the animated captions*/
+  .tp-caption.modern_big_bluebg {
+/*    font-size:54px;
+    line-height:51px;
+    font-weight:800;
+    font-family:"Open Sans", sans-serif;
+    color:rgb(255, 10, 200) !important;
+    text-decoration:none;
+*/    padding:6px 10px 8px 10px !important;
+/*    text-shadow:none;
+    margin:0px;
+    letter-spacing:0px;
+    background-color:rgb(78, 91, 108);
+    border-width:0px;
+    border-color:rgb(255, 255, 255);
+    border-style:none;
+*/  }
+
+
 	.pattern_overlayed #abdev_main_slider_content,
 	.color_overlayed #abdev_main_slider_content{
 		z-index: 1;
